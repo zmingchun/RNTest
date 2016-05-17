@@ -95,7 +95,6 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         flexDirection: "row",
         alignItems: "center",
-        fontSize:16,
         paddingLeft:20
     },
     regionText:{
@@ -108,7 +107,6 @@ const styles = StyleSheet.create({
     },
     nameView:{
         flexDirection:"row",   
-        justityContent:"center"             
     },
     nameText:{
          fontSize:17,         

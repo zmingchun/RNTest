@@ -253,7 +253,7 @@ const styles = StyleSheet.create({
         borderTopWidth: 1,
         borderBottomWidth: 1,
         flexDirection: "row",
-        justityContent: "center"
+        justifyContent: "center"
     },
     dateView: {
         paddingLeft: 15,
@@ -271,7 +271,7 @@ const styles = StyleSheet.create({
     showModel: {
         flex: 1,
         flexDirection: "row",
-        justityContent: "center",
+        justifyContent: "center",
         alignItems: "center",
         padding: 10,
         borderColor: "#eee",
@@ -290,7 +290,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
         color: "#df2d2d",
-        texAlign: "center",
+        textAlign: "center",
     },
     timeEnd: {
         fontSize: 12
@@ -332,7 +332,7 @@ const styles = StyleSheet.create({
         
         backgroundColor:"#fff",
         alignItems:"center",
-        justityContent:"center",
+        justifyContent:"center",
         padding:20
     }
 });

@@ -150,7 +150,7 @@ var styles = StyleSheet.create({
         fontSize: 12
     },
     verView: {
-        justifyConetnt: 'center',
+        justifyContent: 'center',
         backgroundColor: "#2895db",
         borderRadius: 2,
         paddingLeft: 5,
@@ -177,8 +177,7 @@ var styles = StyleSheet.create({
     sale: {
         borderWidth: 1,
         borderColor: '#49d95d',
-        borderRadius: 2,
-        color: '#49d95d',
+        borderRadius: 2,        
         paddingLeft: 10,
         paddingRight: 10
     },
