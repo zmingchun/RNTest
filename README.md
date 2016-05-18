@@ -3,8 +3,6 @@
 由于找到的猫眼API并不完整，所以只能实现部分页面。
 代码写得都很简单，欢迎一起交流学习。(大牛请忽略)
 
-不要问我为什么没有IOS版，因为我买不起Mac啊...
-
 ## 运行
 1. 进入根目录，安装依赖:`npm install`
 2. 连接手机机或者虚拟机
@@ -26,6 +24,12 @@
 (录制于原生安卓模拟器,真机效果会更流畅)
 
 ![](http://yunl.sinaapp.com/images/filmApp.gif)
+
+## IOS
+![](./images/1.png)
+![](./images/2.png)
+![](./images/3.png)
+![](./images/4.jpg)
 
 ## TODO
 - [X] 更多评论列表
