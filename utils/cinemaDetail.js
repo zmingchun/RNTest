@@ -253,7 +253,6 @@ const styles = StyleSheet.create({
         borderTopWidth: 1,
         borderBottomWidth: 1,
         flexDirection: "row",
-        justifyContent: "center"
     },
     dateView: {
         paddingLeft: 15,
@@ -328,11 +327,9 @@ const styles = StyleSheet.create({
     ListView: {
         flex: 1
     },
-    emptyList:{
-        
+    emptyList:{        
         backgroundColor:"#fff",
         alignItems:"center",
-        justifyContent:"center",
         padding:20
     }
 });
