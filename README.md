@@ -1,5 +1,5 @@
 # maoyanFilm
-这是一个仿猫眼电影的Android App，基于React Native构建。
+这是一个仿猫眼电影的App，基于React Native构建。
 由于找到的猫眼API并不完整，所以只能实现部分页面。
 代码写得都很简单，欢迎一起交流学习。(大牛请忽略)
 
@@ -19,13 +19,13 @@
 * ScrollView上拉加载
 * ...
 
-## 演示：
+## Android演示：
 
 (录制于原生安卓模拟器,真机效果会更流畅)
 
 ![](http://yunl.sinaapp.com/images/filmApp.gif)
 
-## IOS
+## IOS截图：
 ![](./images/1.png)
 ![](./images/2.png)
 ![](./images/3.png)
