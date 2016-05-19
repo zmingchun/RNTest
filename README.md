@@ -24,6 +24,9 @@
 * ScrollView上拉加载
 * ...
 
+## Android安装包
+![](./images/down.jpg)
+
 ## Android演示：
 
 (录制于原生安卓模拟器,真机效果会更流畅)
@@ -35,6 +38,8 @@
 ![](./images/2.png)
 ![](./images/3.png)
 ![](./images/4.jpg)
+
+
 
 ## TODO
 - [X] 更多评论列表
