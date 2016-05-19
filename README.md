@@ -14,6 +14,8 @@
 2. XCode打开ios下的film.xcodeproj
 3. 点击Run
 
+## Android安装包
+![](./images/down.jpg)
 
 ## 用到的React Native技术
 * Flex 布局
@@ -23,9 +25,6 @@
 * Tab选项卡局部切换
 * ScrollView上拉加载
 * ...
-
-## Android安装包
-![](./images/down.jpg)
 
 ## Android演示：
 
