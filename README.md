@@ -15,7 +15,7 @@
 3. 点击Run
 
 ## Android安装包
-![](./images/down.jpg)
+![](./images/down1.jpg)
 
 ## 用到的React Native技术
 * Flex 布局
