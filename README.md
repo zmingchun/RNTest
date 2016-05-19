@@ -4,10 +4,15 @@
 代码写得都很简单，欢迎一起交流学习。(大牛请忽略)
 
 ## 运行
-1. 进入根目录，安装依赖:`npm install`
+### Android
+1. 进入maoyanFilm根目录，安装依赖:`npm install`
 2. 连接手机机或者虚拟机
 3. 运行`react-native start` `react-native run-android`
 
+### IOS
+1. 进入maoyanFilm根目录，安装依赖:`npm install`
+2. XCode打开ios下的film.xcodeproj
+3. 点击Run
 
 
 ## 用到的React Native技术
