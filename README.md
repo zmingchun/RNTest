@@ -48,3 +48,5 @@
 - [X] 登录页
 
 
+## License
+This project is available under the MIT license.
