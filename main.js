@@ -7,20 +7,28 @@ import React, {
     Navigator
 } from 'react-native';
 
+//影片tab
 import Main from "./utils/pageNav";
+//影院tab
 import CinemaNav from "./utils/cinemaNav";
+//密蜜tab
+import MmNav from "./utils/mmNav";
+//我tab
 import User from "./utils/user";
+//tab item项
 import TabBarItem from "./utils/TabBarItem";
 
 var _getRandomRoute = function (str) {
     return {
         randNumber: str,
     };
-} 
+}
 
+//路由栈
 var ROUTE_STACK = [
     _getRandomRoute('Main'),
     _getRandomRoute('CinemaNav'),
+    _getRandomRoute('Mm'),
     _getRandomRoute('User'),
 ];
 
@@ -34,7 +42,7 @@ export default class film extends Component {
         }
     }
 
-    render() {        
+    render() {
         return (
             <Navigator
                 initialRoute={ROUTE_STACK[routeIndex]}
@@ -52,16 +60,17 @@ export default class film extends Component {
                 />
         );
     }
-    renderScene(route, navigator){       
+    renderScene(route, navigator){
         var pages =[
             <Main {...route.params} />,
             <CinemaNav {...route.params}  />,
+            <MmNav {...route.params}  />,
             <User {...route.params}  />,
         ]
        return (
            pages[routeIndex]
        )
-       
+
     }
     TabBar() {
         return (
@@ -84,19 +93,28 @@ export default class film extends Component {
                          this.setState({tabIndex:1})
                     } }>
                     ></TabBarItem>
+                <TabBarItem
+                        underlayColor="#B5B5B5"
+                        image={require("./images/icon_mm.png") }
+                        title="密蜜"
+                        onPress={() => {
+                            this.onTabIndex(2);
+                             this.setState({tabIndex:2})
+                        } }>
+                      ></TabBarItem>
                  <TabBarItem
                     underlayColor="#B5B5B5"
                     image={require("./images/me.png") }
                     title="我"
                     onPress={() => {
-                        this.onTabIndex(2);
-                        this.setState({tabIndex:2})
+                        this.onTabIndex(3);
+                        this.setState({tabIndex:3})
                     } }>
                     ></TabBarItem>
             </View>
         )
     }
-    onTabIndex(_index){        
+    onTabIndex(_index){
         routeIndex = _index;
         // this._navigator.jumpTo(ROUTE_STACK[routeIndex]);
     }

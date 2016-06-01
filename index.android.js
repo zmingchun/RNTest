@@ -12,4 +12,4 @@ import React, {
 
 import film from "./main"
 
-AppRegistry.registerComponent('film', () => film);
+AppRegistry.registerComponent('RNTest', () => film);
