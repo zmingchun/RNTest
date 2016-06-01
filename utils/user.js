@@ -8,9 +8,25 @@ import React, {
     Image,
     TextInput,
     Alert,
-    TouchableOpacity
+    TouchableOpacity,
+    ToastAndroid,
+    TouchableHighlight
 } from 'react-native';
 import Toolbar, {ToolbarHome} from "./Toolbar";
+var { NativeModules } = require('react-native');
+//自定义按钮
+class CustomButton extends React.Component {
+  render() {
+    return (
+      <TouchableHighlight
+        style={styles.button}
+        underlayColor="#a5a5a5"
+        onPress={this.props.onPress}>
+        <Text style={styles.buttonText}>{this.props.text}</Text>
+      </TouchableHighlight>
+    );
+  }
+}
 export default class login extends React.Component {
     constructor(props) {
         super(props);
@@ -40,6 +56,19 @@ export default class login extends React.Component {
                         <Text style={styles.unlogin}>无法登录?</Text>
                         <Text style={styles.newUser}>新用户</Text>
                     </View>
+                    <CustomButton
+                       text="点击自定义Toast方法"
+                       onPress={()=>NativeModules.ToastCustomAndroid.show("我是ToastCustomAndroid弹出消息",NativeModules.ToastCustomAndroid.SHORT)}
+                    />
+                    <CustomButton
+                      text="点击测试封装方法"
+                      onPress={()=>NativeModules.ToastCustomAndroid.measureLayout((msg) => {
+                                console.log(msg);
+                              },
+                               (x, y, width, height) => {
+                                console.log(x + '坐标,' + y + '坐标,' + width + '宽,' + height+'高');
+                              })}
+                    />
                 </View>
             </View>
         )
@@ -54,7 +83,7 @@ let styles = StyleSheet.create({
     wrap: {
         backgroundColor: "#eee",
         flex: 1,
-        marginTop:30,        
+        marginTop:30,
     },
     qq: {
         width: 80,
@@ -84,7 +113,7 @@ let styles = StyleSheet.create({
         borderRadius: 4,
         marginLeft:10,
         marginRight:10,
-        marginTop:30,      
+        marginTop:30,
         justifyContent: 'center',
     },
     btnText: {
@@ -96,7 +125,7 @@ let styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'flex-end',
         marginTop:30
-        
+
     },
     unlogin: {
         color: '#63B8FF',
