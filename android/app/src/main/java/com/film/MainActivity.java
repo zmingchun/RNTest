@@ -3,7 +3,8 @@ package com.film;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
-import com.film.custom.AnToastReactPackage;
+import com.film.custom.log.ALogReactPackage;
+import com.film.custom.toast.AnToastReactPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -35,8 +36,9 @@ public class MainActivity extends ReactActivity {
     @Override
     protected List<ReactPackage> getPackages() {
         return Arrays.asList(
-             new MainReactPackage()
-            ,new AnToastReactPackage()
+              new MainReactPackage()
+            , new AnToastReactPackage()
+            , new ALogReactPackage()
         );
     }
 }

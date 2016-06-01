@@ -28,11 +28,13 @@ export default class cinemaList extends Component {
 
     fetchData() {
         var url = "http://m.maoyan.com/cinemas.json";
+        var LogUtil = require('./logUtil');
+        LogUtil.d("fetchData-TAG","请求链接：" + url);
         fetch(url)
             .then((response) => response.json())
             .then((responseData) => {
                 this.setState({
-                    dataSource: this.state.dataSource.cloneWithRowsAndSections(responseData.data),
+                    dataSource:this.state.dataSource.cloneWithRowsAndSections(responseData.data),
                 })
             })
     }

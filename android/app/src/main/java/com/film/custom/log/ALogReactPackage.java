@@ -1,4 +1,4 @@
-package com.film.custom;
+package com.film.custom.log;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
@@ -11,19 +11,16 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * 当前类注释:测试原生Toast模块
- * 项目名：android
- * 包名：com.modules.custom
- * 作者：江清清 on 16/3/31 10:18
- * 邮箱：jiangqqlmj@163.com
- * QQ： 781931404
- * 来源：<a href="http://www.lcode.org">江清清的技术专栏</>
+ * <p>ALogReactPackage类 概述，提供XXX功能</p>
+ *
+ * @author zmingchun
+ * @version 1.0 (2016/6/1 16:57)
  */
-public class AnToastReactPackage implements ReactPackage {
+public class ALogReactPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        List<NativeModule> modules = new ArrayList<>();
-        modules.add(new ToastCustomModule(reactContext));
+        List<NativeModule> modules=new ArrayList<>();
+        modules.add(new LogCustomModule(reactContext));
         return modules;
     }
 
